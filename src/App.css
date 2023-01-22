@@ -11,6 +11,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+  .no-animation {
+    animation: none;
+  }
 }
 
 .App-header {
@@ -28,6 +31,10 @@
   color: #61dafb;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+.fade-in-slow {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
 }
